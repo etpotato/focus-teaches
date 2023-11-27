@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { Button } from '../components/button'
+import { Text } from '../components/text'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
         <Button tag='button'>asdf</Button>
+        <Text tag='p' size='S'>Text</Text>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

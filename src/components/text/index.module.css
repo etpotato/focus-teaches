@@ -1,0 +1,30 @@
+.text {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.text.bold {
+  font-weight: 600;
+}
+
+.text.XS {
+  font-size: 0.6rem;
+}
+
+.text.S {
+  font-size: 1rem;
+}
+
+.text.M {
+  font-size: 1.6rem;
+}
+
+.text.L {
+  font-size: 2.4rem;
+}
+
+.text.XL {
+  font-size: 3.2rem;
+}
+
