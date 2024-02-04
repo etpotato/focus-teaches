@@ -15,7 +15,10 @@
     "cta": "Пробный урок бесплатно"
   },
   "hero": {
-    "img": "https://placehold.co/1200x800",
+    "img":  {
+      "url": "https://images.unsplash.com/photo-1623091034795-46701649f6e9?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Дети катаются на роликах"
+    },
     "tag": "#фокуснаучил",
     "text": [
       "Роллершкола от магазина \"Роллермаг\" под руководством опытного инструктора Сергея Фокина.",
@@ -154,5 +157,6 @@
       ]
     }
   },
-  "scrollup": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\"><path d=\"m3.293 11.293 1.414 1.414L11 6.414V20h2V6.414l6.293 6.293 1.414-1.414L12 2.586l-8.707 8.707z\"/></svg>"
+  "scrollup": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\"><path d=\"m3.293 11.293 1.414 1.414L11 6.414V20h2V6.414l6.293 6.293 1.414-1.414L12 2.586l-8.707 8.707z\"/></svg>",
+  "cta_anchor": "#cta"
 }

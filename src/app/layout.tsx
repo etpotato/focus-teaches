@@ -1,9 +1,11 @@
 import './globals.css'
+import styles from './layout.module.css'
 import type { Metadata } from 'next'
+import cn from 'classnames'
 import { Inter } from 'next/font/google'
 import data from '../data.json'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
 export const metadata: Metadata = {
   title: data.hero.tag,
@@ -17,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, styles.body)}>{children}</body>
     </html>
   )
 }
