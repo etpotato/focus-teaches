@@ -1,6 +1,6 @@
 import TelegramBot from 'node-telegram-bot-api'
 
-import { MessengerService } from ".";
+import { MessengerService } from "./messenger-service.interface";
 
 export class TelegramMessengerService implements MessengerService {
   private tgBot: TelegramBot;

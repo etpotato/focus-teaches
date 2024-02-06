@@ -1,9 +1,12 @@
-import { OrderSchema } from "@/schema/order.schema";
-import { ZodIssue } from "zod";
+import { z } from "zod";
 
-export type CreateOrderDto = OrderSchema;
+export const orderSchema = z.object({
+  name: z.string().trim().min(1, { message: "required" }),
+  phone: z.string().trim().min(1, { message: "required" })
+})
+
+export type CreateOrderDto = z.infer<typeof orderSchema>;
 
 export type ResponseDto = {
   success: boolean,
-  error?: { issues: ZodIssue[] },
 }
