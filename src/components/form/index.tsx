@@ -77,7 +77,7 @@ export const Form = () => {
     <form action="/api/order" encType="multipart/form-data" method="POST" onSubmit={handleSubmit}>
       <input type="text" name="phone" value={phone} onChange={updatePhone} required/>
       <input type="text" name="name" value={name} onChange={updateName} />
-      <Button tag="button" type="submit" disabled={loading}>Submit</Button>
+      <Button tag="button" type="submit" disabled={loading}>Записаться на занятие</Button>
     </form>
   )
 }

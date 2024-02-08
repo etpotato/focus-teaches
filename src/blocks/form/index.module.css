@@ -1,0 +1,14 @@
+.order {
+  padding: 2em;
+  background-color: var(--background-secondary);
+}
+
+@media(min-width: 600px) {
+  .order {
+    padding: 4em;
+  }
+}
+
+.heading {
+  margin-bottom: 2em;
+}

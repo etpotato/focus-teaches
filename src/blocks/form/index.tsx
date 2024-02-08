@@ -1,7 +1,7 @@
 "use client"
 
 import { useDataContext } from "@/contexts"
-import { Text, Form as FormComponent } from '../../components'
+import { Form as FormComponent, Heading } from '../../components'
 import styles from './index.module.css'
 
 export const Form = () => {
@@ -12,9 +12,8 @@ export const Form = () => {
   }
 
   return (
-    <section className={styles.order}>
-      <Text tag="h3" size="XL">{data.form.title}</Text>
-      <Text tag="p" size="L">{data.form.subtitle}</Text>
+    <section className={styles.order} id={data.cta_anchor.slice(1)}>
+      <Heading title={data.form.title} subtitle={data.form.subtitle} className={styles.heading} />
       <FormComponent />
     </section>
   )

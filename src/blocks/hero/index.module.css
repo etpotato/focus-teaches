@@ -1,12 +1,12 @@
 .hero {
   position: relative;
-  padding: 3rem 2rem 6rem;
+  padding: 3em 2em 6em;
   text-align: center;
 }
 
 @media(min-width: 600px) {
   .hero {
-    padding: 5rem 4rem 8rem;
+    padding: 5em 4em 8em;
   }
 }
 
@@ -65,13 +65,9 @@
   }
 }
 
-.cta {
-  font-size: 1.2rem;
-}
-
 @media(min-width: 600px) {
   .cta {
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
     max-width: max-content;
     margin: 0 auto;
   }
