@@ -24,7 +24,6 @@ export const Location = () => {
       <YMaps query={{ apikey: '52b2f753-bf22-4e06-b223-97be2fd204b4' }}>
           <div>
               <Map className={styles.map} defaultState={{ center: [55.7528488147893,37.62321311084745], zoom: 12 }}>
-                  {/* Использование компонента Placemark внутри JSX */}
                   {map.locations.map((location, index) => (
               <Placemark key={index} geometry={location} />
             ))}
