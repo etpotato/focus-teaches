@@ -1,9 +1,6 @@
 .profile{
     padding: 0 2em;
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    gap: 3.75em;
+    display: grid;
 }
 
 .blockquote{
@@ -12,26 +9,37 @@
 }
 
 .quote{
-    font-size: 3rem;
+    font-size: 2.4rem;
     margin-bottom: 17px;
 }
 
+@media (min-width: 600px){
+    .quote{
+        font-size: 2rem;
+    }
+}
+
 .cite{
-    font-size: 2.25rem;
+    font-size: 1.2rem;
     font-style: normal;
+}
+
+@media (min-width: 600px){
+    .cite{
+        font-size: 1.5rem;
+    }
 }
 
 .description{
     color: var(--text-secondary);
-    font-size: 2.25rem;
+    font-size: 1.2rem;
     grid-column-start: 1;
 }
 
-.image{
-    position:absolute;
-    z-index: -1;
-    right: 0;
-    top:0;
+@media (min-width: 600px){
+    .description{
+        font-size: 1.5rem;
+    }
 }
 
 .button{
@@ -58,4 +66,8 @@
     top:0;
     background: url("/profile-play.svg");
 
+}
+.image{
+    width:500px;
+    height: 550px;
 }
