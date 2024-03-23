@@ -25,7 +25,7 @@ export const Profile = () => {
 
     return (
         <section className={styles.profile}>
-            <div>
+            <div className={styles.wrapper}>
                 <blockquote className={styles.blockquote}>
                     <p className={styles.quote}>&Prime;{data.profile.quote}&Prime;</p>
                     <cite className={styles.cite}>{RenderLineBreaks(data.profile.author)}</cite>
