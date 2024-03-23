@@ -34,8 +34,8 @@ export const Profile = () => {
                     {RenderLineBreaks(data.profile.achievements)}
                 </Text>
             </div>
-            <img className={styles.image} src="/img/profile/profile.png"  width="770" height="831" />
-            <Button tag='a' href={data.profile.link} className={styles.button}>{data.profile.cta}</Button>
+            <img className={styles.image} src={data.profile.img.src}  width="770" height="831" loading='lazy' alt={data.profile.img.alt}/>
+            <Button tag='a' target="_blank" href={data.profile.link} className={styles.button}>{data.profile.cta}</Button>
         </section>
     );
 };
