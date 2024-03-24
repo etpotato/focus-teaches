@@ -122,41 +122,45 @@
     "subtitle": "Можно оставить заявку в специальной форме или связаться с нами по телефону или в соц.сетях",
     "items": [
       {
-        "img": "https://placehold.co/200x200",
+        "img": "/contact_hours.png",
         "title": "На связи ежедневно",
         "subtitle": "c 10:00 до 21:00"
       },
       {
-        "img": "https://placehold.co/200x200",
+        "img": "/contact_phone.png",
         "title": "Телефон школы",
         "subtitle": "+7 (915) 125-25-26",
         "url": "tel:+79151252526"
       },
       {
-        "img": "https://placehold.co/200x200",
+        "img": "/contact_email.png",
         "title": "Наша почта",
         "subtitle": "info@focusmail.ru",
         "url": "mailto:info@focusmail.ru"
       }
     ],
     "social": {
-      "subtitle": "Социальные сети",
+      "title": "Социальные сети",
       "items": [
         {
-          "img": "https://placehold.co/100x100",
-          "url": "vk.com"
+          "img": "/vk.svg",
+          "url": "https://vk.com",
+          "color": "#4c75a3"
         },
         {
-          "img": "https://placehold.co/100x100",
-          "url": "whatsapp.com"
+          "img": "/whatsapp.svg",
+          "url": "https://whatsapp.com",
+          "color": "#25d366"
         },
         {
-          "img": "https://placehold.co/100x100",
-          "url": "vk.ru"
+          "img": "/vk.svg",
+          "url": "https://vk.ru",
+          "color": "#a52a2a"
         },
         {
-          "img": "https://placehold.co/100x100",
-          "url": "whatsapp.ru"
+          "img": "/telegram.svg",
+          "url": "https://telegram.org",
+          "color": "#ffe633"
         }
       ]
     }
