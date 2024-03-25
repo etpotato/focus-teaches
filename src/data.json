@@ -29,7 +29,7 @@
   "features": [
     {
       "img": {
-        "id": "slide-icon",
+        "src": "/img/features/slide-icon.png",
         "alt": "/"
       },
       "title": "Занятия не сгорают",
@@ -37,7 +37,7 @@
     },
     {
       "img": {
-        "id": "slide-icon",
+        "src": "/img/features/slide-icon.png",
         "alt": "/"
       },
       "title": "Занятия не сгорают",
@@ -45,7 +45,7 @@
     },
     {
       "img": {
-        "id": "slide-icon",
+        "src": "/img/features/slide-icon.png",
         "alt": "/"
       },
       "title": "Занятия не сгорают",
@@ -53,7 +53,7 @@
     },
     {
       "img": {
-        "id": "slide-icon",
+        "src": "/img/features/slide-icon.png",
         "alt": "/"
       },
       "title": "Занятия не сгорают",
@@ -61,7 +61,7 @@
     },
     {
       "img": {
-        "id": "slide-icon",
+        "src": "/img/features/slide-icon.png",
         "alt": "/"
       },
       "title": "Занятия не сгорают",

@@ -15,7 +15,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 interface Feature {
     img: {
-        id: string;
+        src: string;
         alt: string;
     };
     title: string;
@@ -25,7 +25,7 @@ interface Feature {
 function SlideCard({ feature }: { feature: Feature }) {
     return (
         <div className={styles.slideContent}>
-             <Image className={styles.image} src={`/img/features/${feature.img.id}.svg`} alt={feature.img.alt} width="122" height="122" />
+             <img className={styles.image} src={feature.img.src} alt={feature.img.alt} width="122" height="122" />
             <div>
                 <Text className={styles.title} tag='h2'>{feature.title}</Text>
                 <Text className={styles.text} tag='span'>{feature.text}</Text>
@@ -47,6 +47,7 @@ const InitSlider: React.FC = () => {
         <Swiper className={styles.list}
             slidesPerView={1}
             slidesPerGroup={1}
+            loop={true}
             navigation={{
                 prevEl: '.buttonPrev',
                 nextEl: '.buttonNext',
