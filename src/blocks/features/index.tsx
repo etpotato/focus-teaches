@@ -7,7 +7,6 @@ import 'swiper/components/navigation/navigation.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { useDataContext } from "@/contexts";
-import Image from 'next/image';
 import { Text } from '../../components';
 import styles from './index.module.css';
 
@@ -61,12 +60,12 @@ const InitSlider: React.FC = () => {
             }}
             breakpoints={{
 
-                1900:{
+                1024:{
                     slidesPerView: 3,
-                    spaceBetween: 50,
+                    spaceBetween: 10,
                 },
 
-                1200: {
+                768: {
                     slidesPerView: 2,
                     spaceBetween: 10,
                 },
@@ -82,12 +81,6 @@ const InitSlider: React.FC = () => {
 };
 
 export const Features = () => {
-    const data = useDataContext();
-
-    if (!data) {
-        return null;
-    }
-
     return (
         <section className={styles.features}>
             <button className={`buttonPrev ${styles.button} ${styles.buttonPrev}`}></button>
