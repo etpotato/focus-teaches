@@ -10,20 +10,20 @@ export async function POST(req: Request) {
     const formDataObject = Object.fromEntries(formData.entries())
     const order = await orderSchema.parseAsync(formDataObject)
 
-//     await getTgService().send(`
+    await getTgService().send(`
 
-// <b>new order:</b>
-// name: ${order.name}
-// phone: ${order.phone}
-//     `)
+<b>new order:</b>
+name: ${order.name}
+phone: ${order.phone}
+    `)
 
-//     // no need to await
-//     getSpreadsheet().insert([
-//       order.name,
-//       // hack to avoid google spreadsheet formulas
-//       ' ' + order.phone,
-//       new Date().toLocaleString('ru-RU', { timeZone: getConfig().TIMEZONE }),
-//     ])
+    // no need to await
+    getSpreadsheet().insert([
+      order.name,
+      // hack to avoid google spreadsheet formulas
+      ' ' + order.phone,
+      new Date().toLocaleString('ru-RU', { timeZone: getConfig().TIMEZONE }),
+    ])
 
     console.log('Order success', order);
 

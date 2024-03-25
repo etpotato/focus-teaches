@@ -1,8 +1,6 @@
-import { Button } from '../components/button'
-import { Text } from '../components/text'
 import { DataContextProvider } from '@/contexts'
 import data from '../data.json'
-import { Header, Hero, Form, Profile, Contact } from '@/blocks'
+import { Header, Hero, Form, Profile, Contact, Catalog } from '@/blocks'
 
 export default function Home() {
   return (
@@ -11,6 +9,7 @@ export default function Home() {
       <main>
         <Hero />
         <Profile />
+        <Catalog />
         <Form />
         <Contact />
       </main>
